@@ -19,12 +19,11 @@ SOURCES += src/clipboardplugininfo.cpp \
     src/clipboardmediatransfer.cpp \
     src/clipboardtransferiface.cpp
 
-OTHER_FILES +=
-
 qml.path = /usr/share/nemo-transferengine/plugins
 qml.files = qml/ClipboardShareUi.qml
 
 INSTALLS += target qml
 
 DISTFILES += rpm/harbour-clipboardshareplugin.spec \
-    qml/ClipboardShareUi.qml
+    qml/ClipboardShareUi.qml \
+    rpm/harbour-clipboardshareplugin.changes

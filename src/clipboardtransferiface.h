@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2016 Oleg Linkin <maledictusdemagog@gmail.com>
+Copyright (c) 2016-2018 Oleg Linkin <maledictusdemagog@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,19 +29,19 @@ THE SOFTWARE.
 #include <TransferEngine-qt5/transfermethodinfo.h>
 #include <TransferEngine-qt5/mediatransferinterface.h>
 
-class ClipboardSharePlugin : public QObject
-                            , public TransferPluginInterface
+class ClipboardSharePlugin: public QObject
+                        , public TransferPluginInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA (IID "harbour.Clipboard.transfer.plugin")
-    Q_INTERFACES (TransferPluginInterface)
+    Q_PLUGIN_METADATA(IID "harbour.Clipboard.transfer.plugin")
+    Q_INTERFACES(TransferPluginInterface)
 
 public:
-    ClipboardSharePlugin ();
-    ~ClipboardSharePlugin ();
+    ClipboardSharePlugin();
+    ~ClipboardSharePlugin();
 
-    QString pluginId () const;
-    bool enabled () const;
-    TransferPluginInfo* infoObject ();
-    MediaTransferInterface* transferObject ();
+    QString pluginId() const;
+    bool enabled() const;
+    TransferPluginInfo* infoObject();
+    MediaTransferInterface* transferObject();
 };

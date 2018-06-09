@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2016 Oleg Linkin <maledictusdemagog@gmail.com>
+Copyright (c) 2016-2018 Oleg Linkin <maledictusdemagog@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -48,6 +48,7 @@ void ClipboardPluginInfo::query()
 
     info.displayName = QLatin1String("Clipboard");
     info.methodId = QLatin1String("ClipboardSharePlugin");
+    info.accountIcon = QLatin1String("image://theme/icon-m-clipboard");
     info.shareUIPath = QLatin1String("/usr/share/nemo-transferengine/plugins/ClipboardShareUi.qml");
     info.capabilitities = capabilities;
 
